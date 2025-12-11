@@ -1,0 +1,27 @@
+{
+  "id": "namtara-zone-title",
+  "title": "Namtara Zone Title Popup",
+  "description": "FromSoft-style zone popup with sound, tied to Scenes and triggered manually via chat command.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "scripts": [
+    "scripts/zone-title.js"
+  ],
+  "esmodules": [],
+  "styles": [],
+  "packs": [],
+  "languages": [],
+  "url": "https://github.com/FerrellFT/Namtara-Zone-Title",
+  "manifest": "https://raw.githubusercontent.com/FerrellFT/Namtara-Zone-Title/main/module.json",
+  "download": "https://github.com/FerrellFT/Namtara-Zone-Title/archive/refs/heads/main.zip",
+  "authors": [
+    {
+      "name": "Time Runs Out",
+      "url": "https://github.com/FerrellFT",
+      "email": ""
+    }
+  ]
+}

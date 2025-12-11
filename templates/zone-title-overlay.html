@@ -1,0 +1,62 @@
+<!-- templates/zone-title-overlay.html -->
+
+<div class="zt-overlay">
+  <div class="zt-container">
+    <div class="zt-line"></div>
+    <div class="zt-title">{{title}}</div>
+    {{#if subtitle}}
+    <div class="zt-subtitle">{{subtitle}}</div>
+    {{/if}}
+    <div class="zt-line"></div>
+  </div>
+</div>
+
+<style>
+  .zt-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.35s ease-out;
+    z-index: 100;
+    font-family: "Trajan Pro", "Cinzel", serif;
+    text-shadow: 0 0 4px #000, 0 0 8px #000;
+  }
+
+  .zt-overlay.zt-visible {
+    opacity: 1;
+  }
+
+  .zt-overlay.zt-fade-out {
+    opacity: 0;
+  }
+
+  .zt-container {
+    text-align: center;
+    color: #e0e0e0;
+    padding: 16px 48px;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 4px;
+  }
+
+  .zt-title {
+    font-size: 36px;
+    letter-spacing: 0.08em;
+    margin: 4px 0;
+  }
+
+  .zt-subtitle {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-top: 4px;
+  }
+
+  .zt-line {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #dddddd, transparent);
+    margin: 6px 0;
+  }
+</style>
